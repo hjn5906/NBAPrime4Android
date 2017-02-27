@@ -1,0 +1,22 @@
+<resources>
+    <string name="app_name">NBA Primetime</string>
+    <string name="action_team">Teams</string>
+    <string name="hello_world_again">Hello</string>
+    <string name="second">Go to Activity</string>
+    <string name="second_activity_title">Second Activity</string>
+
+    <string-array name="stat_categories_array">
+        <item>No Stat Selected</item>
+        <item>Points</item>
+        <item>Assists</item>
+        <item>Rebounds</item>
+        <item>Field Goal Percentages</item>
+        <item>Free Throw Percentages</item>
+        <item>3 Point Field Goal Percentages</item>
+        <item>Blocks</item>
+        <item>Steals</item>
+        <item>Double Doubles</item>
+        <item>Triple Doubles</item>
+    </string-array>
+
+</resources>

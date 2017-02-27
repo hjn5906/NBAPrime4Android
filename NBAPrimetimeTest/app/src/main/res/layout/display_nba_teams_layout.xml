@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context=".DisplayNBATeams">
+
+    <TextView
+        style="@style/TextColor"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="NBA Teams"
+        android:textAppearance="?android:textAppearanceLarge"
+        android:layout_centerHorizontal="true" />
+
+    <HorizontalScrollView android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp">
+    <LinearLayout android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            android:id="@+id/linear1"
+            android:layout_width="match_parent"
+            android:layout_height="1dp">
+
+            //List View Titles will be here
+
+            <TextView android:layout_width="140dp"
+            android:layout_height="1dp"
+            android:id="@+id/nba_team_prefix_header"
+            android:layout_alignParentLeft="true"
+            android:text="City"
+            android:gravity="center"
+            android:textAppearance="?android:textAppearanceLarge"
+                      android:visibility="invisible"/>
+
+        <TextView
+            android:layout_width="140dp"
+            android:layout_height="1dp"
+            android:id="@+id/nba_team_name_header"
+            android:layout_toRightOf="@+id/nba_team_prefix_header"
+            android:text="Name"
+            android:gravity="center"
+            android:textAppearance="?android:textAppearanceLarge"
+            android:visibility="invisible"/>
+
+        <TextView
+            android:layout_width="180dp"
+            android:layout_height="1dp"
+            android:id="@+id/nba_team_conference_header"
+            android:layout_toRightOf="@+id/nba_team_name_header"
+            android:text="Conference"
+            android:gravity="center"
+            android:textAppearance="?android:textAppearanceLarge"
+            android:visibility="invisible"/>
+
+        <TextView
+            android:layout_width="120dp"
+            android:layout_height="1dp"
+            android:id="@+id/nba_team_division_header"
+            android:layout_toRightOf="@+id/nba_team_conference_header"
+            android:text="Division"
+            android:gravity="center"
+            android:textAppearance="?android:textAppearanceLarge"
+            android:visibility="invisible"/>
+</RelativeLayout>
+        <ListView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:id="@+id/listviewHeader"
+            android:headerDividersEnabled="false"
+            android:dividerHeight="1dp"
+            android:divider="#f4800b"
+            android:clickable="false"
+            android:background="#f4800b"/>
+<ListView
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+android:layout_alignParentLeft="true"
+android:layout_alignParentTop="true"
+android:id="@+id/listview"
+    android:headerDividersEnabled="false"
+    android:dividerHeight="1dp"
+    android:divider="#f4800b"
+    android:clickable="false" />
+
+    </LinearLayout>
+    </HorizontalScrollView>
+
+
+</RelativeLayout>

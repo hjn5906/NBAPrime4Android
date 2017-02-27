@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/linear1"
+    android:layout_width="match_parent"
+    android:layout_height="75dp">
+
+    <TextView
+        android:layout_width="120dip"
+        android:layout_height="match_parent"
+        android:id="@+id/prefix_header"
+        android:layout_alignParentLeft="true"
+        android:layout_weight="1"
+        android:text="Prefix"
+        android:gravity="center"
+        android:textAppearance="?android:textAppearanceLarge"/>
+
+
+    <TextView
+        android:layout_width="120dp"
+        android:layout_height="match_parent"
+        android:id="@+id/name_header"
+        android:layout_toRightOf="@+id/prefix_header"
+        android:text="Name"
+        android:gravity="center"
+        android:textAppearance="?android:textAppearanceLarge" />
+
+    <TextView
+        android:layout_width="120dp"
+        android:layout_height="match_parent"
+        android:id="@+id/conference_header"
+        android:layout_toRightOf="@+id/name_header"
+        android:text="Conference"
+        android:gravity="center"
+        android:textAppearance="?android:textAppearanceLarge" />
+
+    <TextView
+        android:layout_width="120dp"
+        android:layout_height="match_parent"
+        android:id="@+id/division_header"
+        android:layout_toRightOf="@+id/conference_header"
+        android:text="Division"
+        android:gravity="center"
+        android:textAppearance="?android:textAppearanceLarge" />
+
+
+</RelativeLayout>

@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context=".DisplayNBATeamsRoster">
+
+    <TextView
+        android:id="@+id/teamRosterTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:textAppearanceLarge"
+        android:layout_below="@+id/test_image"
+        android:layout_centerHorizontal="true"/>
+
+    <ImageView
+        android:id="@+id/test_image"
+        android:src="@drawable/atlanta_hawks"
+        android:layout_width="wrap_content"
+        android:layout_height="80dp"
+        android:adjustViewBounds="true"
+        android:scaleType="centerInside"
+        android:onClick="onClick"
+        android:clickable="true"
+        android:layout_alignParentLeft="false"
+        android:layout_centerHorizontal="true"/>
+
+    <HorizontalScrollView android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="120dp">
+        <LinearLayout android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:id="@+id/linear2"
+                android:layout_width="match_parent"
+                android:layout_height="1dp">
+
+                //List View Titles will be here
+
+                <TextView android:layout_width="180dp"
+                    android:layout_height="1dp"
+                    android:id="@+id/nba_team_roster_name_header"
+                    android:layout_alignParentLeft="true"
+                    android:text="Player Name"
+                    android:gravity="center"
+                          android:visibility="invisible"
+                    android:textAppearance="?android:textAppearanceLarge" />
+
+                <TextView
+                    android:layout_width="90dp"
+                    android:layout_height="1dp"
+                    android:id="@+id/nba_team_roster_position_header"
+                    android:layout_toRightOf="@+id/nba_team_roster_name_header"
+                    android:text="Position"
+                    android:gravity="center"
+                    android:visibility="invisible"
+                    android:textAppearance="?android:textAppearanceLarge" />
+
+                <TextView
+                    android:layout_width="80dp"
+                    android:layout_height="1dp"
+                    android:id="@+id/nba_team_roster_age_header"
+                    android:layout_toRightOf="@+id/nba_team_roster_position_header"
+                    android:text="Age"
+                    android:gravity="center"
+                    android:visibility="invisible"
+                    android:textAppearance="?android:textAppearanceLarge" />
+
+                <TextView
+                    android:layout_width="80dp"
+                    android:layout_height="1dp"
+                    android:id="@+id/nba_team_roster_height_header"
+                    android:layout_toRightOf="@+id/nba_team_roster_age_header"
+                    android:text="Height"
+                    android:gravity="center"
+                    android:visibility="invisible"
+                    android:textAppearance="?android:textAppearanceLarge" />
+
+                <TextView
+                    android:layout_width="80dp"
+                    android:layout_height="1dp"
+                    android:id="@+id/nba_team_roster_weight_header"
+                    android:layout_toRightOf="@+id/nba_team_roster_height_header"
+                    android:text="Weight"
+                    android:gravity="center"
+                    android:visibility="invisible"
+                    android:textAppearance="?android:textAppearanceLarge" />
+            </RelativeLayout>
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
+            <ListView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:id="@+id/listviewRosterHeader"
+                android:headerDividersEnabled="false"
+                android:dividerHeight="1dp"
+                android:divider="#f4800b"
+                android:clickable="false"
+                android:background="#f4800b"/>
+
+            <ListView
+                android:layout_width="match_parent"
+                android:layout_marginTop="40dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:id="@+id/listviewRoster"
+                android:headerDividersEnabled="false"
+                android:dividerHeight="1dp"
+                android:divider="#f4800b"
+                android:clickable="false"
+                android:layout_below="@+id/listviewRosterHeader"/>
+            </RelativeLayout>
+        </LinearLayout>
+    </HorizontalScrollView>
+
+</RelativeLayout>

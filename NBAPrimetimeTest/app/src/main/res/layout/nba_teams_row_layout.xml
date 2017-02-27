@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:weightSum="5"
+    >
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1.5"
+                android:id="@+id/nba_team_prefix"
+                android:layout_alignParentLeft="true"
+                android:text="Prefix"
+                android:textSize="20sp"
+                android:gravity="left|center"/>
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1.5"
+                android:id="@+id/nba_team_name"
+                android:layout_toRightOf="@+id/nba_team_prefix"
+                android:text="Name"
+                android:gravity="left|center"
+                android:textSize="20sp"
+                />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:id="@+id/nba_conference"
+                android:layout_toRightOf="@+id/nba_team_name"
+                android:text="Conference"
+                android:gravity="left|center"
+                android:textSize="20sp"
+                />
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:id="@+id/nba_division"
+                android:layout_toRightOf="@+id/nba_conference"
+                android:text="Division"
+                android:gravity="left|center"
+                android:textSize="20sp"
+                />
+
+
+
+</LinearLayout>
